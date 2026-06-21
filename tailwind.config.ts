@@ -79,17 +79,22 @@ const config: Config = {
   				}
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
-  			}
+				from: {
+					height: 'var(--radix-accordion-content-height)'
+				},
+				to: {
+					height: '0'
+				}
+			},
+			'blink-red-black': {
+				'0%, 49%': { color: '#ef4444' },
+				'50%, 100%': { color: '#000000' }
+			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			'blink-red-black': 'blink-red-black 1s step-end infinite'
   		}
   	}
   },

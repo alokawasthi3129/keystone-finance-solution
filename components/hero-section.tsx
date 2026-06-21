@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/keystone-main-banner.png"
+          src="/images/keystone_banner.jpeg"
           alt="Happy family moving into new home"
           fill
           className="object-cover object-[20%] sm:object-center"
@@ -32,9 +32,9 @@ export default function HeroSection() {
             Your Trusted Partner in{" "}<br/>
 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38b6ff] to-[#004aad]">
-              Financing, Leasing & Mortgage
+              Financing, Leasing<br/>& Mortgage Solutions.
             </span>{" "}
-            Solutions.
+            
           </h1>
 
           {/* Decorative Line */}
@@ -42,7 +42,7 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-xl lg:text-2xl text-[#0a346b] max-w-3xl mb-12 leading-relaxed animate-fade-in-up animation-delay-400">
-          Whether you're a startup or a growing enterprise, we help all kinds of Canadian businesses get funded — with <br/> <span className="text-[#38b6ff] font-semibold">speed, flexibility, and trust</span>.
+          Whether you're a startup or a growing enterprise, we help<br/>all kinds of Canadian businesses get funded — with <br/> <span className="text-[#38b6ff] font-semibold">speed, flexibility, and trust</span>.
           </p>
 
           {/* Buttons */}
