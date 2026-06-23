@@ -46,6 +46,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
+     { href: "https://leadsenseicapital.com/vijay-dhanrajani/", label: "for US Inquiry",blink: true },
     { href: "/industries", label: "Industries" },
     { href: "/about", label: "About Us" },
   ]
@@ -76,7 +77,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700  lg:text-lg hover:text-blue-600 transition-colors text-base font-medium"
+             className={`lg:text-lg text-base font-medium ${
+                  link.blink
+                    ? "animate-blink-red-black font-semibold"
+                    : "text-gray-700 hover:text-blue-600 transition-colors"
+                }`}
               >
                 {link.label}
               </Link>
@@ -126,12 +131,16 @@ export default function Navbar() {
               </div>
 
               <div className="space-y-4 mb-8">
-                {navLinks.map((link) => (
+                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
                     onClick={closeMenu}
-                    className="mobile-menu-item block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md hover:bg-blue-50 transition text-base"
+                    className={`mobile-menu-item block px-3 py-2 rounded-md text-base ${
+                      link.blink
+                        ? "animate-blink-red-black font-semibold"
+                        : "text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition"
+                    }`}
                   >
                     {link.label}
                   </Link>
